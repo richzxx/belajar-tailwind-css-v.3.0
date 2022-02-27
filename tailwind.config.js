@@ -10,6 +10,10 @@ module.exports = {
       },
       fontFamily: {
       'inter': ['Inter']
+      },
+      colors: {
+        'richzxx': '#c0ffee',
+        'richz_2': '#bada55'
       }
     }
   },
