@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
-
+    
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -48,7 +48,7 @@
     <!-- Arbitrary Values -->
 
     <!--TODO Kuncinya pake Kurung Siku! -->
-    <h2 class="mb-[20px] font-inter text-2xl text-center font-bold">New Sections</h2>
+    <h2 class="mb-[20px] font-inter text-2xl text-center font-bold">Basic Utility</h2>
     <!-- <div class="max-w-md h-72 bg-richz_2 mx-auto rounded-3xl overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/900x500?computer');">
     
         <p class="p-3 text-justify font-inter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis repellat quas ducimus nisi nulla molestias distinctio accusantium sequi, quasi eligendi non quae sed odio quod consequuntur atque repellendus voluptatum alias veritatis praesentium ullam. Ab, nisi animi? Iusto quae qui veritatis est, ipsum nostrum corporis vero inventore dolor. Vero repudiandae nesciunt eveniet rem eaque beatae explicabo sequi ea ad incidunt, iure, sunt at praesentium quibusdam? Fugit, enim! Similique fuga aliquid repellat consectetur laborum quos eius cupiditate dignissimos nostrum temporibus, animi sed iusto debitis excepturi quaerat illo qui eum ad quibusdam nesciunt perspiciatis! Laboriosam, corporis aut nam dolores illum sapiente nisi. In, eaque nostrum assumenda ducimus soluta aut similique quidem enim! Tempora, eum! Esse ex tempore similique, recusandae ab labore hic, vel quis ea aspernatur incidunt saepe beatae. Cumque alias, totam mollitia animi exercitationem vel sequi neque veniam, nemo libero dolor nesciunt tempora molestias voluptatem delectus ex a laudantium quo. Nulla, explicabo vero? Rem dolore magni corporis odit? Minima, perspiciatis? Adipisci debitis suscipit error odio aperiam esse, iste cum minus harum quidem sint alias dolor animi, cupiditate repellendus aspernatur nam neque amet provident! Tenetur rerum officiis, consectetur ratione id maiores molestias enim aspernatur quisquam, quasi quod quo, deserunt aliquam eum itaque!</p>
@@ -57,14 +57,70 @@
     <!-- Section Background Image Sizing -->
     <!-- Effects Background Image -->
     <!-- FIlter -->
-    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover bg-no-repeat bg-top rounded-3xl shadow-xl shadow-slate-400 flex
+    <div class="mt-5 mb-20 max-w-lg mx-auto h-96 bg-slate-300 bg-cover bg-no-repeat bg-top rounded-3xl shadow-xl shadow-slate-400 flex
     " style="background-image: url('./img/img-1.jpg');">
 
     <!-- Filter Backdrop Blur -->
     <div class="w-[200px] h-[200px] bg-white/20 m-auto backdrop-blur-sm"></div>
     </div>
 
+    <hr class="my-20 max-w-lg mx-auto"/>
+
+    <!-- Pseudo Class Tailwind CSS -->
+
+    <div class="max-w-lg my-5 rounded-2xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group">
+        <h2 class="mb-3 text-xl font-bold group-hover:text-white selection:bg-white selection:text-black">Richard Laurent</h2>
+        <p class="
+        text-slate-600 text-justify group-hover:text-white 
+        selection:bg-white 
+        selection:text-black
+        first-line:uppercase
+        first-letter:text-7xl
+        first-letter:float-left
+        first-letter:mr-3
+        ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem libero cum corporis a amet aliquid aspernatur vitae ab unde excepturi. Atque unde doloremque pariatur assumenda voluptatem accusamus veritatis illum non?</p>
+    </div>
+
+    <button type="submit" class="bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-400 shadow-lg active:bg-sky-600 focus:ring focus:ring-sky-200">Save</button>
+
+    <hr class="my-20 max-w-lg mx-auto"/>
+    <!-- Before: After: Utility -->
+
+    <div class="max-w-lg border border-slate-200 rounded-2xl mx-auto shadow-md font-inter p-5">
+        <form action="">
+            <label for="email">
+                <span class="block font-semibold mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5">Email</span>
+                <input type="email" id="email" placeholder="Email" class="px-3 py-2 border shadow-md w-full block text-sm rounded-2xl placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:border-sky-500 invalid:text-red-600
+                invalid:focus:ring-red-600 invalid:focus:border-red-600 peer">
+                <p class="text-sm m-1 text-red-600 invisible peer-invalid:visible">Email tidak valid</p>
+            </label>
+        </form>
+    </div>
+
+    <hr class="my-10 max-w-lg mx-auto"/>
+    <!-- Dark Mode & Light Mode Switcher -->
+
+    <div class="flex justify-center">
+        <span class="mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden"/>
+        <label for="toggle">
+            <div class="w-11 h-6 bg-slate-500 rounded-full flex items-center cursor-pointer">
+                <div class="w-5 h-5 ml-1 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="ml-2">Dark</span>
+    </div>
+
     <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const body = document.querySelector('body');
+
+        checkbox.addEventListener('click', function() {
+            checkbox.checked ? body.classList.add("dark:bg-slate-800") : body.classList.remove("dark:bg-slate-800");
+        });
+    </script>
 
 </body>
 </html>

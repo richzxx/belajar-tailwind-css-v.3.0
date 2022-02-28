@@ -2,6 +2,7 @@ module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
     extend: {
+      darkMode: 'class',
       spacing: {
         '13': '3.25rem',
         '15': '3.75rem',
