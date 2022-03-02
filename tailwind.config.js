@@ -15,6 +15,17 @@ module.exports = {
       colors: {
         'richzxx': '#c0ffee',
         'richz_2': '#bada55'
+      },
+      // Bikin Animasi Sendiri
+      keyframes: {
+        goyang: {
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
+        }
+      },
+      animation: {
+        'spin-slow': 'bounce 1s ease-in-out infinite',
+        'goyang': 'goyang 1s ease-in-out infinite',
       }
     }
   },

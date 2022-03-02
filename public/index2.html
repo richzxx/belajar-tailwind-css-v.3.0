@@ -13,7 +13,7 @@
 
     <title>Coba Tailwind Part 2</title>
 </head>
-<body>
+<body class="transition duration-500">
     <h1>Mari Belajar Tailwind CSS</h1>
 
     <!-- Belajar Spacing Tailwind CSS -->
@@ -105,11 +105,27 @@
         <input type="checkbox" id="toggle" class="hidden"/>
         <label for="toggle">
             <div class="w-11 h-6 bg-slate-500 rounded-full flex items-center cursor-pointer">
-                <div class="w-5 h-5 ml-1 bg-white rounded-full toggle-circle"></div>
+                <div class="w-5 h-5 ml-1 bg-white rounded-full toggle-circle transition duration-500"></div>
             </div>
         </label>
         <span class="ml-2">Dark</span>
     </div>
+
+    <hr class="mt-20 mb-40 max-w-lg mx-auto"/>
+    <!-- Transform, Transition, Animation -->
+
+    <div class="w-52 h-52 mb-10 bg-sky-500 mx-auto shadow-lg rounded-3xl hover:-translate-y-8 hover:bg-sky-400 transition duration-500"></div>
+
+    <!-- Component biar ga patah-patah dibungkus di satu Div terus di Group-->
+
+    <div class="w-52 h-52 mt-10 mx-auto group">
+        <div class="w-52 h-52 mb-10 bg-sky-500 mx-auto shadow-lg rounded-3xl group-hover:-translate-y-8 group-hover:bg-sky-400 transition duration-500 ease-in-out delay-75 animate-pulse"></div>
+    </div>
+
+    <!-- Animations / Custom Animations -->
+
+    <div class="mt-20 w-52 h-52 mb-10 bg-lime-500 mx-auto shadow-lg rounded-3xl animate-goyang"></div>
+
 
     <div class="mb-96"></div>
 
