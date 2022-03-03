@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!-- <html lang="en" class="scroll-smooth"> -->
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -155,14 +156,58 @@
     <hr class="mt-20 mb-32 max-w-lg border-t-4 border-slate-600 mx-auto"/>
     <!-- Responsive Web Tailwind CSS -->
 
-    <div class="container max-w-lg mx-auto px-6 font-inter sm:max-w-xl md:max-w-3xl">
-        <h3 class="text-4xl font-bold text-slate-800 text-center">Richard Laurent</h3>
-        <img src="img/img-2.jpg" alt="Laptop" class="rounded-2xl mt-4 shadow-xl mx-auto md:h-64 md:w-full md:object-cover md:object-top" />
-        <h2 class="mt-12 text-2xl font-semibold text-slate-800 text-center">Mari Belajar Programming</h2>
-        <p class="mt-2 text-slate-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eius velit deserunt itaque ex perspiciatis eveniet at odio consequatur temporibus totam expedita aspernatur molestiae accusamus! Numquam et mollitia autem neque ipsa dolor inventore, non suscipit odio libero, minus veniam? Dolorum.</p>
-        <div class="mt-5 text-center">
-            <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-3xl shadow-lg uppercase font-semibold tracking-wider hover:-translate-y-2 hover:bg-red-500 transition duration-500">Subscribe</a>
+    <div class="container max-w-md mx-auto px-6 font-inter sm:max-w-lg md:max-w-2xl lg:flex lg:max-w-full lg:p-0">
+        <!-- Belajar Flex box -->
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 text-center lg:text-left">Mac Book Air X-1</h3>
+            <img src="img/img-2.jpg" alt="Laptop" class="rounded-2xl mt-4 shadow-xl mx-auto md:h-64 md:w-full md:object-cover md:object-top lg:hidden hover:scale-105 transition duration-500" />
+            <h2 class="mt-12 lg:mt-3 text-2xl font-semibold text-slate-800 text-center lg:text-left">$ 1.300</h2>
+            <p class="mt-2 text-slate-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eius velit deserunt itaque ex perspiciatis eveniet at odio consequatur temporibus totam expedita aspernatur molestiae accusamus! Numquam et mollitia autem neque ipsa dolor inventore, non suscipit odio libero, minus veniam? Dolorum.</p>
+            <div class="mt-5 text-center lg:text-left">
+                <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-3xl shadow-lg font-semibold  hover:-translate-y-2 hover:bg-red-500 transition duration-500">Check Out!</a>
+            </div>
         </div>
+
+        <div class="hidden lg:block lg:w-1/2 xl:w-1/3 hover:scale-110 hover:-translate-x-4 transition duration-500">
+            <img src="img/img-2.jpg" alt="Laptop" class="rounded-l-3xl shadow-xl">
+        </div>
+    </div>
+
+    <!-- Flex Pt. 2 -->
+    <h3 class="text-4xl font-bold text-slate-800 text-center mt-20 mb-20">My Gallery</h3>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:justify-evenly sm:gap-6">
+
+        <div class="rounded-2xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <div class="overflow-hidden">
+                <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full hover:scale-125 hover:brightness-75 transition duration-300">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800 text-center">Image Title</div>
+                <p class="text-justify text-sm text-slate-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem iste non quidem! Voluptate, fugiat non similique cumque porro, recusandae, et nostrum reprehenderit accusamus beatae officia temporibus soluta tempora. Atque.</p>
+            </div>
+        </div>
+
+        <div class="rounded-2xl shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <div class="overflow-hidden">
+                <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full hover:scale-125 hover:brightness-75 transition duration-300">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800 text-center">Image Title</div>
+                <p class="text-justify text-sm text-slate-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem iste non quidem! Voluptate, fugiat non similique cumque porro, recusandae, et nostrum reprehenderit accusamus beatae officia temporibus soluta tempora. Atque.</p>
+            </div>
+        </div>
+
+        <div class="rounded-2xl shadow-lg mb-10 sm:mb-0 sm:w-64 overflow-hidden md:w-80 lg:w-72">
+            <div class="overflow-hidden">
+                <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full hover:scale-125 hover:brightness-75 transition duration-300">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-800 text-center">Image Title</div>
+                <p class="text-justify text-sm text-slate-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem iste non quidem! Voluptate, fugiat non similique cumque porro, recusandae, et nostrum reprehenderit accusamus beatae officia temporibus soluta tempora. Atque.</p>
+            </div>
+        </div>
+        
     </div>
 
     <div class="mb-96"></div>
