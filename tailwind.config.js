@@ -10,7 +10,8 @@ module.exports = {
         '144': '36rem',
       },
       fontFamily: {
-      'inter': ['Inter']
+        'inter': ['Inter'],
+        'Alegreya': ['Alegreya Sans SC']
       },
       colors: {
         'richzxx': '#c0ffee',
